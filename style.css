@@ -1,0 +1,250 @@
+/* CSS moderne pour la boutique */
+body {
+    font-family: 'Times New Roman', Times, serif, serif;
+    margin: 0;
+    padding-top: 70px; /* pour que le contenu ne soit pas caché derrière la barre de navigation */
+}
+
+.navbar {
+    background-color: #333;
+    border: none;
+}
+
+.navbar-brand, .navbar-nav li a {
+    color: #d70fa5 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover, .navbar-nav li a:hover {
+    color: #e05278 !important;
+}
+
+.custom-phrase {
+    font-family: 'Times New Roman', Times, serif, serif; /* Change la police */
+    font-size: 36px; /* Taille de la police */
+    background-color: #f0c8f3;
+    color: #e052d4; /* Couleur du texte */
+    font-weight: lighter; /* Texte en gras */
+    text-align: center; /* Centrer le texte */
+    letter-spacing: 2px; /* Espacement des lettres */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #C49FFF, #ea255a);
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.container.products {
+    margin-top: 20px;
+}
+
+.product {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 250px; /* Fixe la hauteur pour uniformiser les images */
+    object-fit: cover; /* Coupe les images pour qu'elles rentrent dans les dimensions sans déformation */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #8f5e79;
+}
+
+.product .list-price {
+    font-size: 14px;
+}
+
+.product .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5e89;
+}
+
+.product button {
+    background-color: #d70fa5;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #e86dc9;
+}
+
+/* Flexbox pour aligner les produits */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-3 {
+    flex: 0 0 24%; /* Chaque colonne prend environ 24% de la largeur */
+    margin-bottom: 20px;
+}
+
+/* Footer stylé */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 48%; /* Ajustement pour les petits écrans */
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Style pour le conteneur du bouton */
+.contact-container {
+    text-align: center; /* Centrer le bouton */
+    margin-top: 20px;
+}
+
+/* Style personnalisé pour le bouton */
+/* Style pour le conteneur du bouton */
+.contact-container {
+    text-align: center; /* Centrer le bouton */
+    margin-top: 20px;
+}
+
+/* Style personnalisé pour le bouton, avec !important pour forcer le style */
+.custom-btn {
+    background-color: #d70fa5 !important; /* Vert personnalisé */
+    border: none !important;
+    color: white !important;
+    padding: 15px 30px !important; /* Augmente la taille du bouton */
+    font-size: 18px !important; /* Taille du texte */
+    border-radius: 30px !important; /* Arrondir les coins */
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important; /* Effet de transition pour le hover */
+}
+
+/* Changement de couleur lors du survol */
+.custom-btn:hover {
+    background-color: #eb7bc4 !important; /* Couleur plus foncée au survol */
+}
+
+.custom-btn:hover {
+    background-color: #cd30db; /* Couleur plus foncée au survol */
+}
+
+@media screen and (max-width: 480px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+}
+/* la page contact  */
+/* CSS moderne pour la page Contact */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 70px; /* pour que le contenu ne soit pas caché derrière la barre de navigation */
+}
+
+.navbar {
+    background-color: #333;
+    border: none;
+}
+
+.navbar-brand, .navbar-nav li a {
+    color: #d70fa5 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover, .navbar-nav li a:hover {
+    color: #e05278 !important;
+}
+
+.container.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f0c8f3;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d70fa5;
+    font-weight: bold;
+}
+
+.form-group label {
+    color: #333;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+button.btn-primary {
+    background-color: #d70fa5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button.btn-primary:hover {
+    background-color: #e86dc9;
+}
+
+/* Footer stylé */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container.contact {
+        padding: 20px;
+    }
+}
